@@ -1,6 +1,7 @@
 {
     "type": "application",
     "source-directories": [
+        "Engine",
         "Game"
     ],
     "elm-version": "0.19.1",

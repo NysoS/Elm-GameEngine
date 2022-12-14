@@ -1,6 +1,8 @@
 module Main exposing (..)
+import Runtime.RenderView as Render exposing (..)
 
-import Html exposing (text)
+import Html exposing (Html)
 
+main : Html msg
 main =
-    text "Test"
+    Render.renderView

@@ -1,6 +1,6 @@
 module Core.Content.Sprites.BallSprite exposing (..)
 
-import Engine.Component.Sprite exposing (Sprite)
+import Engine.Component.Sprite exposing (Sprite, createSprite)
 import Svg exposing (Svg, circle)
 import Svg.Attributes exposing (..)
 
@@ -18,3 +18,7 @@ shapeBall =
         , strokeWidth "3"
         ]
         []
+
+sprite : Sprite msg
+sprite =
+    createSprite shapeBall

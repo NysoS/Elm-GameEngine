@@ -1,6 +1,6 @@
 module Core.Content.Sprites.RectSprite exposing (..)
 
-import Engine.Component.Sprite exposing (Sprite)
+import Engine.Component.Sprite exposing (Sprite, createSprite)
 import Svg exposing (Svg, rect)
 import Svg.Attributes exposing (..)
 
@@ -19,3 +19,7 @@ shapeRect =
         , strokeWidth "2"
         ]
         []
+
+sprite : Sprite msg
+sprite =
+    createSprite shapeRect

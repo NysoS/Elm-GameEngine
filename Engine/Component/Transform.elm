@@ -6,8 +6,8 @@ type alias Transform =
     , rotation : Vector2D
     }
 
-setupTransform : Transform
-setupTransform =
+createTransform : Transform
+createTransform =
     { position = Vector.createVector2D (0,0)
     , rotation = Vector.createVector2D (0,0)
     }

@@ -6,9 +6,7 @@ type alias Sprite msg =
     { render : Svg msg
     }
 
-setupSpriteRender : Sprite msg
-setupSpriteRender =
-    { render =
-                (circle []
-                       [])
+createSprite : Svg msg -> Sprite msg
+createSprite shape =
+    { render = shape
     }

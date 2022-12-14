@@ -1,14 +1,14 @@
 module Engine.Component.GameObject exposing (..)
 
-import Engine.Component.Sprite exposing (Sprite, setupSpriteRender)
-import Engine.Component.Transform exposing (Transform, setupTransform)
+import Engine.Component.Sprite as Sprite
+import Engine.Component.Transform as Transform
 
 type alias GameObject msg =
-    { transform : Transform
-    , sprite : Sprite msg
+    { transform : Transform.Transform
+    , sprite : Sprite.Sprite msg
     }
 
-setupGameObject : GameObject msg
-setupGameObject =
-    { transform = setupTransform
-    , sprite =  setupSpriteRender }
+createGameObject : Sprite.Sprite msg -> GameObject msg
+createGameObject sprite =
+    { transform = Transform.createTransform
+    , sprite = sprite }

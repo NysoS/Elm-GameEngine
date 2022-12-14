@@ -1,4 +1,4 @@
-module Runtime.RenderView exposing (..)
+module Engine.Runtime.RenderView exposing (..)
 
 import Html exposing (Html)
 import Svg exposing (..)
@@ -12,13 +12,4 @@ renderView =
         , height "600"
         ]
         [
-            circle
-                [ cx "50"
-                , cy "50"
-                , r "40"
-                , fill "red"
-                , stroke "black"
-                , strokeWidth "3"
-                ]
-                []
         ]
